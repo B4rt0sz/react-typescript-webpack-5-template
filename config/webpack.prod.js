@@ -30,7 +30,6 @@ module.exports = {
   },
   plugins: [
     new CopyPlugin({
-      //example of using copy-webpack-plugin:
       patterns: [
         {
           from: path.resolve(__dirname, '..', './public/images'),

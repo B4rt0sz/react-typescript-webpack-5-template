@@ -1,14 +1,14 @@
-# :page_facing_up: React Webpack 5 Template
+# :page_facing_up: React with TypeScript Webpack 5 Template
 
-:scroll: Webpack 5 template with React 18 using Babel 7, HMR, Sass and PostCSS with a hot dev server and an optimized production build.
+:scroll: Webpack 5 template with React 18 with TypeScript 5 using Babel 7, HMR, Sass and PostCSS with a hot dev server and an optimized production build.
 
 ## Installation
 
 Clone this repository and npm install:
 
 ```
-git clone https://github.com/B4rt0sz/react-webpack-5-template.git
-cd react-webpack-5-template
+git clone https://github.com/B4rt0sz/react-typescript-webpack-5-template.git
+cd react-typescript-webpack-5-template
 npm install
 ```
 
@@ -44,6 +44,7 @@ npm run build
 
 - [Webpack 5](https://webpack.js.org/)
 - [React 18](https://reactjs.org/)
+- [TypeScript 5](https://www.typescriptlang.org/)
 - [Babel 7](https://babeljs.io/)
 - [Sass](https://sass-lang.com/)
 - [PostCSS](https://postcss.org/)
@@ -71,12 +72,20 @@ npm run build
 - [`webpack-dev-server`](https://github.com/webpack/webpack-dev-server) - Development server for webpack
 - [`webpack-merge`](https://github.com/survivejs/webpack-merge) - Simplify development/production configuration
 
+### TypeScript
+
+- [`typescript`](https://www.typescriptlang.org/) - Adds optional types to JavaScript that support tools for large-scale JavaScript applications for any browser, for any host, on any OS
+- [`@types/react`](https://www.npmjs.com/package/@types/react) - Contains type definitions for React
+- [`@types/react-dom`](https://www.npmjs.com/package/@types/react-dom) - Contains type definitions for react-dom
+- [`@types/react-router-dom`](https://www.npmjs.com/package/@types/react-router-dom) - Contains type definitions for react-router-dom
+
 ### Babel
 
 - [`@babel/core`](https://www.npmjs.com/package/@babel/core) - Transpile ES6+ to backwards compatible JavaScript
 - [`@babel/preset-env`](https://babeljs.io/docs/en/babel-preset-env) - Smart defaults for Babel
 - [`@babel/preset-react`](https://babeljs.io/docs/en/babel-preset-react) - Babel preset for all React plugins
 - [`@babel/plugin-transform-runtime `](https://babeljs.io/docs/en/babel-plugin-transform-runtime) - Enables the re-use of Babel's injected helper code to save on codesize
+- [`@babel/preset-typescript`](https://babel.dev/docs/babel-preset-typescript) - Recommended if you use TypeScript
 
 ### Loaders
 
@@ -98,11 +107,12 @@ npm run build
 - [`copy-webpack-plugin`](https://github.com/webpack-contrib/copy-webpack-plugin) - Copies individual files or entire directories, which already exist, to the build directory
 - [`dotenv-webpack`](https://github.com/mrsteele/dotenv-webpack) - Supports dotenv and other environment variables
 - [`image-minimizer-webpack-plugin`](https://github.com/webpack-contrib/image-minimizer-webpack-plugin) - Plugin and Loader to optimize (webp 90%) all images using [`sharp`](https://github.com/lovell/sharp)
+- [`fork-ts-checker-webpack-plugin`](https://github.com/TypeStrong/fork-ts-checker-webpack-plugin) - Runs TypeScript type checker on a separate process
 
 ### Linters
 
 - [`eslint`](https://github.com/eslint/eslint) - Enforce styleguide across application
-- [`@babel/eslint-parser`](https://github.com/babel/babel-eslint) - Lint ALL valid Babel code with the ESLint
+- [`@babel/eslint-parser`](https://github.com/babel/babel-eslint) - Lint all valid Babel code with the ESLint
 - [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) - Implment prettier rules
 - [`eslint-plugin-import`](https://github.com/benmosher/eslint-plugin-import) - Implment import rules
 - [`eslint-import-resolver-alias`](https://www.npmjs.com/package/eslint-import-resolver-alias) - Simple Node.js module import resolution plugin for `eslint-plugin-import`
@@ -110,7 +120,10 @@ npm run build
 - [`eslint-plugin-prettier`](https://github.com/prettier/eslint-plugin-prettier) - Runs Prettier as an ESLint rule
 - [`eslint-plugin-react`](https://github.com/yannickcr/eslint-plugin-react) - React specific linting rules for ESLint
 - [`eslint-plugin-react-hooks`](https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks) - ESLint plugin enforces the Rules of Hooks
+- [`eslint-plugin-eslint-comments`](https://github.com/mysticatea/eslint-plugin-eslint-comments) - Additional ESLint rules for ESLint directive comments
 - [`prettier`](https://github.com/prettier/prettier) - Prettier is an opinionated code formatter
+- [`@typescript-eslint/eslint-plugin`](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) - Provides lint rules for TypeScript codebases
+- [`@typescript-eslint/parser`](https://www.npmjs.com/package/@typescript-eslint/parser) - Leverages TypeScript ESTree to allow for ESLint to lint TypeScript source code
 
 ## Author
 

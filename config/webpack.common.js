@@ -3,12 +3,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
 
 module.exports = {
-  entry: path.resolve(__dirname, '..', './src/index.js'),
+  entry: path.resolve(__dirname, '..', './src/index.tsx'),
 
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
         use: ['babel-loader'],
       },
@@ -24,7 +24,7 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['*', '.js', '.jsx'],
+    extensions: ['*', '.ts', '.tsx', '.js', '.jsx'],
   },
 
   plugins: [
